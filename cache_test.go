@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dgraph-io/ristretto/z"
+	"github.com/ze6ra/ristretto/z"
 	"github.com/stretchr/testify/require"
 )
 
@@ -811,7 +811,7 @@ func TestBlockOnClear(t *testing.T) {
 	}
 }
 
-// Regression test for bug https://github.com/dgraph-io/ristretto/issues/167
+// Regression test for bug https://github.com/ze6ra/ristretto/issues/167
 func TestDropUpdates(t *testing.T) {
 	originalSetBugSize := setBufSize
 	defer func() { setBufSize = originalSetBugSize }()
